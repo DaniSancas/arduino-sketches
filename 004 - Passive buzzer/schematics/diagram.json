@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": -47.4, "left": -61.2, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -180,
+      "left": 30.6,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [ [ "mega:8", "bz1:2", "red", [ "v0" ] ], [ "mega:GND.1", "bz1:1", "black", [ "v0" ] ] ],
+  "dependencies": {}
+}
